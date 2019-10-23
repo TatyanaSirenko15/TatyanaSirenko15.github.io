@@ -1,0 +1,23 @@
+/*Каркас сайта*/
+body {padding:0px; margin:0; background:#0066CC; font-size:12px; font-family:Arial, Sans-serif;}
+#basic {width:960px; min-height:500px; margin:0 auto; padding:40px 60px 120px 40px; background:#fff;}
+img {border:0;}
+a {color:#ff9c00;}
+a:hover {text-decoration:none;}
+ 
+/*Шапка сайта*/
+#head-site {height:20px;}
+li.none-bg {background:none!important;}
+.telefon {float:right;}
+ 
+/*Верхнее меню сайта*/
+#top-menu {width:960px; height:74px; }
+.bg-1 {width:950px; height:64px; background:#0066CC url(images/m1.png) repeat-x; padding:0 0 0 10px;}
+.bg-2 {width:940px; height:8px; background:#33CCFF; margin:0 auto;}
+.bg-1 ul {margin:0; padding:0; list-style:none;}
+.bg-1 ul li {float:left; background:url(images/m2.png) no-repeat right center; padding:0 2px 0 0;}
+.bg-1 ul li a {display:block; height:30px; padding:24px 27px 0 27px; color:#33CCFF; text-decoration:none; text-transform:uppercase;}
+.bg-1 ul li a:hover {color:#fff; background:#33CCFF;}
+
+
+ 
