@@ -1,0 +1,67 @@
+  
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <title>Интернет-технологии</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+ <style>
+   p {
+    border: 1px solid blue;
+    padding: 10px;
+   }
+  </style>
+</head>
+<body>
+ <!-- Îñíîâíîé áëîê ñàéòà -->
+    <div id="basic">
+       <img src="1.jpg"/>
+        <!-- Øàïêà ñàéòà -->
+        <div id="head-site">
+            
+        </div>
+         
+        <!-- Âåðõíåå ìåíþ ñàéòà -->
+        <div id="menu-top">
+        <div class="bg-1">
+            <ul>
+            <li><a href="2.html">О студенте</a></li>
+            <li><a href="3.html">Лабораторная работа №1</a></li>
+            <li><a href="4.html">Лабораторная работа №2</a></li>
+            <li><a href="5.html">Лабораторная работа №3</a></li>
+            </ul>
+        </div>
+<div>
+<div class="content">
+    <canvas class="canvas"></canvas>
+    <div class="tools">
+        <div class="tools__controls">
+            <label class="tools__control" title="Добавить вершину">
+                <input type="radio" value="vertex" checked="true" name="controls" class="tools__control__input control__vertex"/>
+                <span class="tools__control__checkmark">В</span>
+            </label>
+            <label class="tools__control" title="Добавить ребро">
+                <input type="radio" value="edge" name="controls" class="tools__control__input control__edge"/>
+                <span class="tools__control__checkmark">Р</span>
+            </label>
+            <label class="tools__control" title="Добавить/Удалить петлю">
+                <input type="radio" value="loop" name="controls" class="tools__control__input control__loop"/>
+                <span class="tools__control__checkmark">П</span>
+            </label>
+            <label class="tools__control" title="Матрица смежности">
+                <input type="button" name="controls" class="control__matrix" value="M"/>
+            </label>
+            <label class="tools__control" title="Очистить">
+                <input type="button" name="controls" class="control__clear" value="О"/>
+            </label>
+        </div>
+    </div>
+</div>
+<script src="./js/graph.js"></script>
+<script src="./js/index.js"></script>
+</div>
+
+    </div>
+       
+</body>
+</html>
