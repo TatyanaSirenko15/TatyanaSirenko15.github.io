@@ -1,0 +1,125 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex-direction: column;
+
+    width: 75%;
+    height: 75%;
+    display: flex;
+}
+
+.canvas {
+    flex: 1 0 auto;
+    border: 1px solid black;
+}
+
+.tools {
+    flex: 0 0 auto;
+
+    border: 1px solid black;
+    border-top: 0;
+    border-left: 1px solid black;
+}
+
+.tools__controls {
+    margin: 4px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: calc(100% - 4px * 2);
+}
+
+.tools__list {
+    border-top: 1px solid black;
+    padding-top: 4px;
+    text-align: center;
+}
+
+.tools__control {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding-bottom: 0;
+    padding-left: 4px;
+}
+
+.tools__control__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    line-height: 25px;
+    text-align: center;
+}
+
+.tools__control:hover .tools__control__input ~ .tools__control__checkmark {
+    background-color: #ccc;
+}
+
+.tools__control .tools__control__input:checked ~ .tools__control__checkmark {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.tools__control .tools__control__input:checked ~ .tools__control__checkmark:after {
+    display: block;
+}
+
+.tools__control .tools__control__checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.control__matrix, .control__clear {
+    background-color: #2196F3;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media all and (min-width: 1024px){
+    .content {
+        flex-direction: row;
+    }
+
+    .tools {
+        flex: 0 0 10px;
+        border-left: 0;
+        border-top: 1px solid black;
+    }
+
+    .tools__controls {
+        flex-direction: column;
+    }
+
+    .tools__control {
+        padding-bottom: 4px;
+        padding-left: 0;
+    }
+}
